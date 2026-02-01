@@ -20,15 +20,15 @@ const Hero = () => {
                   <TextType
                     text={["Powering Cities", "One Step At A Time"]}
                     typingSpeed={75}
-                    pauseDuration={1500}
-                    showCursor
-                    cursorCharacter="_"
-                    texts={["Welcome to React Bits! Good to see you!", "Build some amazing experiences!"]}
                     deletingSpeed={50}
-                    variableSpeedEnabled={false}
-                    variableSpeedMin={60}
+                    pauseDuration={1500}
+                    loop
+                    showCursor
+                    cursorCharacter="|"
+                    variableSpeed={true}
+                    variableSpeedMin={50}
                     variableSpeedMax={120}
-                    cursorBlinkDuration={0.5}
+                    onSentenceComplete={() => { }}
                   />
                 </h1>
                 <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
